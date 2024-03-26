@@ -50,13 +50,19 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9j2-8o-V1Y">
-                                <rect key="frame" x="194.66666666666666" y="188.66666666666666" width="4" height="18.666666666666657"/>
+                                <rect key="frame" x="71.666666666666686" y="188.66666666666666" width="250" height="18.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="aSr-7d-p3X"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMk-x5-LN1">
-                                <rect key="frame" x="194.66666666666666" y="654.66666666666663" width="4" height="18.666666666666629"/>
+                                <rect key="frame" x="71.666666666666686" y="654.66666666666663" width="250" height="18.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="TDK-qc-1SO"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>

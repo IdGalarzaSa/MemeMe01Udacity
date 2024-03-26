@@ -34,11 +34,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         shareButton.isEnabled = false
-        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera)
         
-        configTextFields()
+#if targetEnvironment(simulator)
+        cameraButton.isEnabled = false
+#endif
+
+        stupTextField(topTextField, withText: "TOP")
+        stupTextField(bottomTextField, withText: "BOTTOM")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,24 +54,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         unsubscribeFromKeyboardNotifications()
     }
     
-    func configTextFields() {
-        topTextField.delegate = self
-        bottomTextField.delegate = self
+    func stupTextField(_ textField: UITextField, withText: String) {
+        textField.delegate = self
+        let attributes: [NSAttributedString.Key: Any] = [
+            .strokeColor: UIColor.black,
+            .foregroundColor: UIColor.white,
+            .strokeWidth: -2.0
+        ]
+        textField.defaultTextAttributes = attributes
+        textField.adjustsFontSizeToFitWidth = true
+        textField.minimumFontSize = 12
+        textField.text = withText
+        textField.textAlignment = .center
+        textField.font = UIFont(name: "Impact", size: 20)
         
-        topTextField.text = "TOP"
-        bottomTextField.text = "BOTTOM"
-        
-        topTextField.textAlignment = .center
-        bottomTextField.textAlignment = .center
-        
-        topTextField.font = UIFont(name: "Impact", size: 20)
-        bottomTextField.font = UIFont(name: "Impact", size: 20)
-        
-        topTextField.textColor = .white
-        bottomTextField.textColor = .white
-        
-        view.bringSubviewToFront(topTextField)
-        view.bringSubviewToFront(bottomTextField)
+        view.bringSubviewToFront(textField)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
