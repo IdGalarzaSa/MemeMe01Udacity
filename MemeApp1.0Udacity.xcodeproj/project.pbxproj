@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2CBBFD2BB26DDE00F68ADA /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CBBFC2BB26DDE00F68ADA /* Meme.swift */; };
 		BCB02BB52BB1E0EB003D95AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB02BB42BB1E0EB003D95AA /* AppDelegate.swift */; };
 		BCB02BB72BB1E0EB003D95AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB02BB62BB1E0EB003D95AA /* SceneDelegate.swift */; };
 		BCB02BB92BB1E0EB003D95AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB02BB82BB1E0EB003D95AA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC2CBBFC2BB26DDE00F68ADA /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		BCB02BB12BB1E0EB003D95AA /* MemeApp1.0Udacity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeApp1.0Udacity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB02BB42BB1E0EB003D95AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB02BB62BB1E0EB003D95AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				BCB02BBD2BB1E0EC003D95AA /* Assets.xcassets */,
 				BCB02BBF2BB1E0EC003D95AA /* LaunchScreen.storyboard */,
 				BCB02BC22BB1E0EC003D95AA /* Info.plist */,
+				BC2CBBFC2BB26DDE00F68ADA /* Meme.swift */,
 			);
 			path = MemeApp1.0Udacity;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB02BB92BB1E0EB003D95AA /* ViewController.swift in Sources */,
+				BC2CBBFD2BB26DDE00F68ADA /* Meme.swift in Sources */,
 				BCB02BB52BB1E0EB003D95AA /* AppDelegate.swift in Sources */,
 				BCB02BB72BB1E0EB003D95AA /* SceneDelegate.swift in Sources */,
 			);
@@ -218,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -295,6 +299,8 @@
 				DEVELOPMENT_TEAM = 8DCWN9W347;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemeApp1.0Udacity/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,6 +313,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanGalarza.MemeApp1-0Udacity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,6 +333,8 @@
 				DEVELOPMENT_TEAM = 8DCWN9W347;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemeApp1.0Udacity/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +347,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanGalarza.MemeApp1-0Udacity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
